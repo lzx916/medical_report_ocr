@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>测试提交图片</title>
+  <style type="text/css">
+      html {
+          /*border: 1px solid black;*/
+          height: 100%;
+          width: 100%;
+          overflow: auto;
+      }
+      body {
+            min-height: 98%;
+            min-width: 98%;
+            /*border: 1px solid black;*/
+            background-color: lightblue;
+            position: relative;
+      }
+      div {
+            width: 600px;
+            height: 34px;
+            /*text-align: center;*/
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /*border: 1px solid red;*/
+            font-size: x-large;
+            text-align: center;
+      }
+      /*form {*/
+      /*    text-align: center;*/
+      /*}*/
+  </style>
+</head>
+
+<body>
+  <div>
+        <form action="http://139.196.193.253:8080/post" method="POST" enctype="multipart/form-data" onsubmit="alert('提交成功！等待识别结果...');">
+<!--      <form action="http://127.0.0.1:8080/post" method="POST" enctype="multipart/form-data">-->
+<!--         <label>选择图片文件</label>-->
+
+         <input name="imgfile" type="file"/>
+
+         <input class="submit" type="submit" value="提交">
+      </form>
+  </div>
+</body>
+
+</html>
